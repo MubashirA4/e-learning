@@ -1,6 +1,11 @@
 *{
-  margin: 0px;;
-  padding: 0px;
+  /* margin: 0px;;
+  padding: 0px; */
   box-sizing: border-box;
   font-family:"Roboto", sans-serif; 
+}
+.page_width{
+  max-width: 1150px;
+    margin: auto;
+    padding: 0px;
 }
