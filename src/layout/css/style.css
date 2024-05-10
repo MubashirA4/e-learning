@@ -25,6 +25,15 @@ ul{
     width: 350px;
     margin-top: 10px;
 }
+.Header nav .inner_input{
+    position: relative;
+}
+.Header nav .icon{
+    position: absolute;
+    left: 190px;
+    top: 40px;
+    color: rgba(152, 162, 179, 1);
+}
 .Header nav input .inner_input{
     border: 1px solid black;
 }
@@ -36,7 +45,7 @@ ul{
     line-height: 24px;
     text-align: left;
 }
-.Header nav .input button{
+.Header nav .input p{
     color: rgba(32, 180, 134, 1);
     background-color: rgb(242,255,251);
     padding: 6px 20px;
@@ -67,6 +76,9 @@ ul{
     line-height: 24px;
     text-align: left;
     color: rgba(16, 24, 40, 1);
+}
+.Header nav ul .signup{
+    margin-left: 15px;
 }
 .Header nav ul .signup button{
     background:rgba(32, 180, 134, 1);

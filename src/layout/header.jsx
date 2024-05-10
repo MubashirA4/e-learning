@@ -6,14 +6,15 @@ import { FiSearch } from "react-icons/fi";
 import { Link } from 'react-router-dom'
 
 const Header = () => {
-  return (
+  return ( 
     <div className='Header'>
         <nav>
           <img src={Logo} alt="" />
-          <div className="input"><FiSearch />
-
+          <div className="input">
+         
           <input type="text"  placeholder="Want to learn?" className='inner_input'/>
-          <button>Explore</button>
+          <FiSearch className='icon'/>
+          <p>Explore</p>
           </div>
           <ul>
             <li><Link to={"/"}>Home</Link></li>
