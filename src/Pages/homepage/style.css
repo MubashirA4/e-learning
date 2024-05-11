@@ -30,17 +30,16 @@
     line-height: 28.8px;
     color: rgba(100, 100, 100, 1);
 }
-.banner .banner_image .logo{
-    border: 1px solid rgb(32,180,134);
-    border-radius: 50%;
-    background-color: rgb(32,180,134);
-    padding: 250px 20px;
-    position: relative;
+.banner .banner_image{
+    border: 2px solid rgb(32,180,134);
+    /* border-radius: 70%; */
 }
-.banner .banner_image .logo img{
+.banner .banner_image img{
+    background: rgb(32,180,134);
     border-radius: 50%;
-    position: absolute;
-    top: 2px;
+    width: 400px;
+    margin-top: 40px;
+    margin-left: 40px;
 }
 .banner .inner_banner .content .buttons{
     display: flex;

@@ -1,5 +1,5 @@
 import React from 'react'
-import Logo from '../assets/image1.png'
+import Logo from '../assets/Mask group.png'
 const Banner = () => {
   return (
     <div className='banner'>
@@ -8,7 +8,7 @@ const Banner = () => {
             <div className="content">
               <h2>Up Your <span>Skills</span> To <span>Advance</span> Your <span>Career</span> Path</h2>
               <p>Learn UI-UX Design skills with weekend UX . The latest online learning system and material that help your knowledge growing.</p>
-              <div className="buttons">
+              <div className="buttons"> 
                 <div className="getstarted">
                   <button>Get started</button>
                 </div>
@@ -23,9 +23,7 @@ const Banner = () => {
               </div>
             </div>
             <div className="banner_image">
-              <div className="logo">
                 <img src={Logo} alt="" />
-              </div>
             </div>
           </div>
         </div>

@@ -1,10 +1,11 @@
 import React from 'react'
+import './style.css'
 
 const Signin = () => {
   return (
     <div>
-      <h2>Ali</h2>
-    </div>
+     form
+  </div>
   )
 }
 
