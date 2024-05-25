@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 *{
   margin: 0px;;
   padding: 0px;
   box-sizing: border-box;
-  font-family:"Roboto", sans-serif; 
 }
 .page_width{
   max-width: 1150px;

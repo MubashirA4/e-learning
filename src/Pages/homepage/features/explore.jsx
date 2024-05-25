@@ -59,7 +59,6 @@ const Explore = () => {
                                 <p>2001 Enrolled</p>
                              </div>
                              <span>$8.99</span>
-
                         </div>
                     </div>
                 </div>
