@@ -28,7 +28,7 @@ const ContactUs = () => {
               </label><br />
               <button>Send</button>
             </form>
-            <div className="map">
+            <div className="map"> 
               <p>Weekend UX <br />
                 B 37/3 Ground Floor Double StoryRamesh Nagar , Near Raja Garden Chowk.Delhi: 110015</p>
                 <h5>+91 9599272754</h5>
