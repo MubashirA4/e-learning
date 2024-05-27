@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+.page_width{
+    max-width: 1150px;
+    margin: auto;
+    padding: 0px;
+}
 .banner{
     background: rgba(36, 187, 140, 0.02);
+    padding: 20px 0px;
 }
 .banner .inner_banner{
     display: grid;
@@ -36,7 +42,7 @@
     position: relative;
     width: 100%;
 }
-.banner .banner_image img{
+.banner .banner_image .inimag img{
     background: rgb(32,180,134);
     border-radius: 50%;
     width: 400px;
@@ -45,13 +51,120 @@
 }
 .banner .banner_image .circle_border{
     top: 34px;
-    left: 50px;
+    left: 40px;
     position: absolute;
     width: 400px;
-    height: 300px;
-    border: 2px solid #000;
+    height: 407px;
+    border: 1px solid rgb(32,180,134);
     border-radius: 50%;
     z-index: -1;
+}
+.banner .banner_image .card-1{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    display: flex;
+    gap: 10px;
+    border: 1px solid rgb(32,180,134);
+    width: 180px;
+    border-radius: 10px;
+    padding: 10px;
+    height: 70px;
+    background: rgba(245, 245, 244, 1);   
+}
+.banner .banner_image .card-1 .img{
+    background: rgb(32,180,134);
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 8px;
+}
+.banner .banner_image .card-1 .card-cont{
+    margin-top: 0px;
+}
+.banner .banner_image .card-1 .card-cont h2{
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30.26px;
+    text-align: left;
+    color: rgba(16, 24, 40, 1);
+}
+.banner .banner_image .card-1 .card-cont p{
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.15px;
+    text-align: left;
+    color: rgba(16, 24, 40, 1);
+}
+.banner .banner_image .card-2{
+    position: absolute;
+    border: 1px solid rgb(32,180,134);
+    border-radius: 10px;
+    padding: 10px;
+    background: rgba(245, 245, 244, 1); 
+    top: 20%;
+    right: 8%;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 15px;
+}
+.banner .banner_image .card-2 .card-cont h2{
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30.26px;
+    text-align: left;
+    color: rgba(16, 24, 40, 1);
+    text-align: center;
+    margin-top: 10px;
+}
+.banner .banner_image .card-2 .card-cont p{
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.15px;
+    text-align: left;
+    color: rgba(16, 24, 40, 1);
+}
+.banner .banner_image .card-3{
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    border: 1px solid rgb(32,180,134);
+    width: fit-content;
+    border-radius: 10px;
+    padding: 10px;
+    height: 70px;
+    background: rgba(245, 245, 244, 1);   
+    top: 70%;
+    right: 10%;
+}
+.banner .banner_image .card-3 .img{
+    background: rgb(32,180,134);
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 8px;
+}
+.banner .banner_image .card-3 .card-cont p{
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18.15px;
+    text-align: left;
+    color: rgba(16, 24, 40, 1);
+    margin-top: 5px;
+}
+.banner .banner_image .card-3 .card-cont h2{
+    font-family: Inter;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30.26px;
+    text-align: left;
+    color: rgba(16, 24, 40, 1);
 }
 .banner .inner_banner .content .buttons{
     display: flex;
@@ -98,6 +211,10 @@
 }
 .banner .inner_banner .content .bar .public{
     display: flex;
+}
+.banner .inner_banner .content .bar .public p{
+    margin-left: 10px;
+    margin-top: 0%;
 }
 .banner .inner_banner .content .bar .public img{
     width: 20%;
@@ -236,7 +353,10 @@
     line-height: 25.2px;
     letter-spacing: 0.02em;
     text-align: center;
+    cursor: pointer;
+    display: flex;
 }
+
 .page_width .service-detail .card2{
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -288,6 +408,8 @@
     line-height: 25.2px;
     letter-spacing: 0.02em;
     text-align: center;
+    cursor: pointer;
+    display: flex;
 }
 
 /* explore */

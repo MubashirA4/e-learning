@@ -2,6 +2,9 @@ import React from 'react'
 import Frame3 from '../assets/Frame 1.png'
 import Frame2 from '../assets/Frame 2.png'
 import Frame1 from '../assets/Frame 3.png'
+import { MdOutlineNavigateNext } from "react-icons/md";
+
+
 const Services = () => {
   return (
     <div className='our_services'>
@@ -17,7 +20,7 @@ const Services = () => {
                         <h4>Interaction Design</h4>
                     </div>
                     <p>Lessons on design that cover the most recent developments.</p> 
-                    <button>Learn More  &#62;</button>   
+                    <button>Learn More  <MdOutlineNavigateNext  size={24} className='Lm'/></button>   
                 </div>    
                 <div className="card2">
                     <div className="card-img">
@@ -25,7 +28,7 @@ const Services = () => {
                         <h4>UX Design Course</h4>
                     </div>
                     <p>Lessons on design that cover the most recent developments.</p>    
-                    <button>Learn More  &#62;</button>   
+                    <button>Learn More <MdOutlineNavigateNext size={24} className='Lm'/></button>   
                 </div>    
                 <div className="card2">
                     <div className="card-img">
@@ -33,7 +36,7 @@ const Services = () => {
                         <h4>User interface design</h4>
                     </div>
                     <p>Lessons on design that cover the most recent developments.</p>   
-                    <button>Learn More  &#62;</button>    
+                    <button>Learn More  <MdOutlineNavigateNext size={24} className='Lm'/></button>    
                 </div>    
             </div>  
         </div>

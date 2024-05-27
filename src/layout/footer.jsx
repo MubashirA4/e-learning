@@ -4,7 +4,7 @@ import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
-
+import { FaDribbble } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -56,10 +56,11 @@ const Footer = () => {
           <div className="rights">
             <p>&copy; 2022 Ed-Circle. All rights reserved.</p>
             <div className="icons">
-            <FaTwitter />
-            <FaLinkedin />
-            <FaFacebook />
-            <IoLogoGithub />
+            <FaTwitter className='icons-1' size={24}/>
+            <FaLinkedin className='icons-1'size={24}/>
+            <FaFacebook className='icons-1'size={24}/>
+            <IoLogoGithub className='icons-1'size={24}/>
+            <FaDribbble size={24}/>
             </div>
           </div>
       </div>
