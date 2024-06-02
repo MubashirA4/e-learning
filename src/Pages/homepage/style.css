@@ -37,8 +37,6 @@
     color: rgba(100, 100, 100, 1);
 }
 .banner .banner_image .inimag{
-    /* border: 1px solid rgb(32,180,134);
-    border-radius: 50%; */
     position: relative;
     width: 100%;
 }
@@ -66,7 +64,7 @@
     display: flex;
     gap: 10px;
     border: 1px solid rgb(32,180,134);
-    width: 180px;
+    width: fit-content;
     border-radius: 10px;
     padding: 10px;
     height: 70px;
@@ -314,6 +312,7 @@
     background: rgba(74, 200, 174, 1);
     border-radius: 10px;
     padding: 20px 30px;
+    width: 100%;
 }
 .page_width .service-detail .card1 .card-img{
     display: flex;
@@ -342,7 +341,6 @@
     text-align: left;
     margin: 15px 0px;
 }
-
 .page_width .service-detail .card1 button{
     border: none;
     background: rgba(74, 200, 174, 1);
@@ -356,12 +354,12 @@
     cursor: pointer;
     display: flex;
 }
-
 .page_width .service-detail .card2{
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     padding: 0px 25px;
     background: rgba(255, 255, 255, 1);
+    width: 100%;
 }
 .page_width .service-detail .card2 h4{
     font-family: Inter;
@@ -411,7 +409,12 @@
     cursor: pointer;
     display: flex;
 }
-
+@media screen and (max-width: 768px) {
+    .service-detail{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+}
 /* explore */
 .explore .head h4{ 
     color: rgba(26, 144, 107, 1);
@@ -439,8 +442,6 @@
     text-align: left;
     color: rgba(102, 112, 133, 1);
 }
-
-/* cards */
 .cards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -537,6 +538,11 @@
     margin: 50px 0px;
 }
 .page_width .btn a{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: left;
     background: rgba(249, 250, 251, 1);
     color: rgba(16, 24, 40, 1);
     padding: 5px 15px;

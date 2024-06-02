@@ -4,7 +4,7 @@ import Frame2 from '../assets/Frame 2.png'
 import Frame1 from '../assets/Frame 3.png'
 import { MdOutlineNavigateNext } from "react-icons/md";
 
-
+ 
 const Services = () => {
   return (
     <div className='our_services'>

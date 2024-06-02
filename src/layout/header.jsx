@@ -5,7 +5,7 @@ import { FiSearch } from "react-icons/fi";
 import { IoIosArrowDown } from "react-icons/io";
 
 import { Link } from 'react-router-dom'
-
+ 
 const Header = () => {
   return (
     <header className='container'>
