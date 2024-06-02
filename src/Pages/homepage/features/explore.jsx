@@ -10,7 +10,7 @@ import Avatar2 from '../assets/Avatar (2).png'
 
 const Explore = () => {
   return (
-    <div className='explore'>
+    <div className="explore">
         <div className="page_width">
             <div className="head">
                 <h4>Explore Programs</h4>
