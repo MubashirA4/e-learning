@@ -25,7 +25,7 @@ const Header = () => {
         </div>
       </div>
       <div className="bars" onClick={() => setShowMenu(!showMenu)}>
-        {showMenu == true ?<HiOutlineBars3 /> : <FaTimes/> }
+        {showMenu == true ? <FaTimes/> :<HiOutlineBars3 />  }
       </div>
       <div className={`bar_menu ${showMenu == true ? 'show_menu' : 'hide_menu'}`}>
       <nav>
