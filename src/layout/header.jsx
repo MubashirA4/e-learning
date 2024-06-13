@@ -4,7 +4,9 @@ import Logo from './assets/image 2.png'
 import { FiSearch } from "react-icons/fi";
 import { IoIosArrowDown } from "react-icons/io";
 import { HiOutlineBars3 } from "react-icons/hi2";
+import { FaTimes } from "react-icons/fa";
 import { Link } from 'react-router-dom'
+
 
 const Header = () => {
   const [showMenu,setShowMenu] = useState(false)
@@ -23,7 +25,7 @@ const Header = () => {
         </div>
       </div>
       <div className="bars" onClick={() => setShowMenu(!showMenu)}>
-        <HiOutlineBars3 />
+        {showMenu == true ?<HiOutlineBars3 /> : <FaTimes/> }
       </div>
       <div className={`bar_menu ${showMenu == true ? 'show_menu' : 'hide_menu'}`}>
       <nav>
