@@ -10,12 +10,16 @@ import Creative from '../assets/banner/creative.png'
 import { HiOutlineDesktopComputer } from "react-icons/hi";
 import Ring from '../assets/Ring.png'
 import { GiTeacher } from "react-icons/gi";
+import { CgToolbox } from "react-icons/cg";
+import { TbBulb } from "react-icons/tb";
+import { BiColor } from 'react-icons/bi'
+
 
 
 const Banner = () => {
   return (
-    <div className="page_width">
-      <div className='banner'>
+    <div className='banner'>
+      <div className="page_width">
         <div className="inner_banner">
           <div className="content">
             <h2>Up Your <span>Skills</span> To <span>Advance</span> Your <span>Career</span> Path</h2>
@@ -30,27 +34,27 @@ const Banner = () => {
             </div>
             <div className='bar'>
               <div className="public">
-                <RiSpeakLine />
+                <RiSpeakLine className='p_icon' size="40px"/>
                 <p>Public Speaking</p>
               </div>
-              <div className="career">
-                <img src={Career} alt="" />
-                <p>Career oriented</p>
+              <div className="public">
+              <CgToolbox className='c_icon' size="40px"/>
+              <p>Career oriented</p>
               </div>
-              <div className="creative">
-                <img src={Creative} alt="" />
+              <div className="public">
+                <TbBulb className='t_icon' size="40px"/>
                 <p>Creative thinking</p>
               </div>
             </div>
-          </div>
-          <div className="banner_image">
+          </div> 
+          <div className="banner_image"> 
             <div className="inimag">
               <img src={Logo} alt="" />
               <div className="circle_border">
               </div>
             </div>
             <div className="card-1">
-              <HiOutlineDesktopComputer size={34} className='img' />
+              <HiOutlineDesktopComputer size={34} className="img" />
               <div className="card-cont">
                 <h2>2K+</h2>
                 <p>Video Courses</p>

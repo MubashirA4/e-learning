@@ -8,7 +8,6 @@ import Signin from "./Pages/Signin";
 import SignUp from "./Pages/signup";
 import { Routes,Route } from "react-router-dom";
 
-
 function App() {
   return (
     <div className="App">

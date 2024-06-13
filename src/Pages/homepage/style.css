@@ -36,6 +36,9 @@
     line-height: 28.8px;
     color: rgba(100, 100, 100, 1);
 }
+.banner .banner_image{
+    position: relative;
+}
 .banner .banner_image .inimag{
     position: relative;
     width: 100%;
@@ -59,8 +62,8 @@
 }
 .banner .banner_image .card-1{
     position: absolute;
-    top: 45%;
-    left: 50%;
+    top: 35%;
+    left: 0;
     display: flex;
     gap: 10px;
     border: 1px solid rgb(32,180,134);
@@ -100,7 +103,7 @@
     border-radius: 10px;
     padding: 10px;
     background: rgba(245, 245, 244, 1); 
-    top: 20%;
+    top: 0;
     right: 8%;
     justify-content: center;
     text-align: center;
@@ -211,45 +214,17 @@
 .banner .inner_banner .content .bar .public p{
     margin-left: 10px;
     margin-top: 0%;
+    padding: 10px 0px;
 }
-.banner .inner_banner .content .bar .public img{
-    width: 20%;
-    height: 60%;
-    margin-right: 10px;
+.banner .inner_banner .content .bar .public .p_icon{
+   color: rgba(241, 191, 90, 1);
 }
-.banner .inner_banner .content .bar .career{
-    display: flex;
+.banner .inner_banner .content .bar .public .c_icon{
+   color: rgba(244, 135, 107, 1);
 }
-.banner .inner_banner .content .bar .career p{
-    font-family: Inter;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    text-align: left;
-    margin-top: 1px;   
+.banner .inner_banner .content .bar .public .t_icon{
+   color: rgba(180, 112, 141, 1);
 }
-.banner .inner_banner .content .bar .career img{
-    width: 20%;
-    height: 60%;
-    margin-right: 10px;
-}
-.banner .inner_banner .content .bar .creative{
-    display: flex;
-}
-.banner .inner_banner .content .bar .creative p{
-    font-family: Inter;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    text-align: left;
-    /* margin-top: 4px;    */
-}
-.banner .inner_banner .content .bar .creative img{
-    width: 20%;
-    height: 50%;
-    margin-right: 10px;
-}
-
 .banner .block{
     display: flex;
     justify-content: space-between;
@@ -405,11 +380,6 @@
     cursor: pointer;
     display: flex;
 }
-@media screen and (max-width: 720px) {
-    .service-detail{
-        grid-template-columns: 1fr !important;
-    }
-}
 
 /* explore */
 .explore .head h4{ 
@@ -537,11 +507,6 @@
     border-radius: 5px;
     box-shadow: 1px 1px 5px rgba(208, 213, 221, 1) ;
 }
-@media screen and (max-width:720px) {
-    .explore .cards{
-        grid-template-columns: 1fr !important;
-    }
-}
 /* Tutors */
 .tutor{
     margin: 90px 0px;
@@ -621,11 +586,6 @@
 .tutor .intro-card .card-details .twitt{
     margin-right: 10px;
 }
-@media screen and (max-width:720px) {
-    .tutor .intro-card{
-        grid-template-columns: 1fr;
-    }
-}
 
 /* Reviews */
 .review{
@@ -689,8 +649,7 @@
     margin-top: 30px;
 }
 .blog .blog-left .blog-content img{
-    width: 280px;
-    height: 100%;
+    width: 100%;
 }
 .blog .blog-left .blog-content .blog-desc{
     margin-left: 20px;
@@ -811,4 +770,174 @@
     color: rgba(193, 21, 116, 1);
     padding: 5px 10px;
     border-radius: 10px;
+}
+@media screen and (max-width:768px) {
+    .page_width{
+        max-width: 720px;
+        margin: auto;
+    }
+    .banner .inner_banner{
+        gap: 15px;
+    }
+    .banner .inner_banner .content h2{
+        font-family: Inter;
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 46px;
+        letter-spacing: -0.5px;
+        color: rgba(16, 24, 40, 1);
+    }   
+    .banner .inner_banner .content p{
+        margin: 10px 0px;    
+    }
+    .banner .inner_banner .content .bar {
+        display: flex;
+        justify-content:space-between;
+        margin-top: 40px;
+        width: 100%;
+        position: absolute;
+    }
+    .banner .inner_banner .content .buttons .getstarted button{
+        background:rgb(32,180,134) ;
+        padding: 5px 15px;
+        border: 2px yellow;
+        color: white;
+        border-radius: 5px;
+        font-family: Inter;
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 28px;
+        margin-right:20px ;
+        cursor: pointer;
+    }
+    .banner .inner_banner .content .buttons .details button{
+        background: rgba(234, 255, 249, 1);
+        color: rgba(59, 196, 154, 1);
+        border: none;
+        font-family: Inter;
+        font-size: 10px;
+        font-weight: 600;
+        line-height: 28px;
+        text-align: left;
+        padding: 5px 15px;
+        cursor: pointer;
+    }
+    .banner .inner_banner .content .bar .public p{
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+        margin-top: 1px;
+    }
+    .banner .banner_image .inimag img{
+        background: rgb(32,180,134);
+        border-radius: 50%;
+        width: 300px;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    .banner .banner_image .circle_border{
+        top: 41px;
+        left: 35px;
+        position: absolute;
+        width: 312px;
+        height: 300px;
+        border: 1px solid rgb(32, 180, 134);
+        border-radius: 50%;
+        z-index: -1;
+    }
+    .banner .banner_image .card-1{
+        top: 8rem;
+        /* display: none; */
+        padding: 10px;
+    }
+    .banner .banner_image .card-1 .img{
+        /* background: rgb(32,180,134);
+        color: #fff;
+        border-radius: 5px;
+        padding: 5px;
+        margin-top: 8px; */
+        width: 2rem;
+        height: 2rem;
+    }
+    .banner .banner_image .card-1 .card-cont h2{
+        font-size: 16px;
+    }
+    .banner .banner_image .card-1 .card-cont p{
+        font-size: 12px;
+    }
+    .banner .banner_image .card-2{
+        top: 0;
+        right: -25px;
+    }
+    .banner .banner_image .card-2 img{
+        width: 50px;
+    }
+    .banner .banner_image .card-2 .card-cont h2{
+        font-size: 16px;
+    }
+    .banner .banner_image .card-2 .card-cont p{
+        font-size: 12px;
+    }
+    .banner .banner_image .card-3{
+        top: 18rem;
+        right: -20px;
+        padding: 10px 15px;
+    }
+    .banner .banner_image .card-3 .img{
+        width: 2rem;
+        height: 2rem;
+    }
+    .banner .banner_image .card-3 .card-cont p{
+        font-size: 12px;
+    }
+    .banner .banner_image .card-3 .card-cont h2{
+        font-size: 16px;
+
+    }
+    .cards .inner_card .content .logo{
+        display: flex;
+        justify-content:start;
+        margin: 20px 0px;
+    }
+    .cards .inner_card .content .logo span{
+        margin-left: 65px;
+        color: rgba(63, 200, 158, 1);
+        font-family: Inter;
+        font-size: 26px;
+        font-weight: 700;
+        line-height: 31.47px;
+        /* text-align: right; */
+    }
+    .service-detail{
+        grid-template-columns: 1fr 1fr !important;
+    }
+    .block .colab, .duo, .cov, .test, .magic{
+        display: none;
+    }
+    .explore .cards{
+        grid-template-columns: 1fr 1fr!important;
+    }
+    .tutor .intro-card{
+        grid-template-columns: 1fr 1fr;
+    }
+    .inner_blog{
+        grid-template-columns: 1fr;
+    }
+    .blog .blog-left .blog-content{
+        padding: 10px;
+        box-shadow: 0px 0px 5px 1px rgba(8,7,8,1);
+    }
+    .blog .blog-left .blog-content .blog-desc{
+        margin: 10px;
+    }
+    .blog .blog-right{
+        padding: 10px;
+        box-shadow: 0px 0px 5px 1px rgba(8,7,8,1);
+    }
+    .inner_blog .blog-content{
+        flex-direction: column;
+    }
+   
 }

@@ -42,7 +42,7 @@ const Footer = () => {
                   <li><a href="#">GitHub</a></li>
                   <li><a href="#">Dribble</a></li>
               </ul>
-          </div>
+          </div> 
           <div className="column2">
               <ul>
                 <li className='head'><a href="#">Legal</a></li>

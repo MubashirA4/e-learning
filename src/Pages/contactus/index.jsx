@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import './style.css'
 import Img from './assets/Rectangle 19.png'
 import { IoLogoYoutube } from "react-icons/io";
@@ -7,6 +7,22 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 
 const ContactUs = () => {
+  const [fname,setFname] = useState('')
+  const [email,setEmail] = useState('')
+  const [message,setMessage] = useState('')
+
+  const formData = {
+    first_name:fname,
+    email:email,
+    message:message
+  }
+
+  const handleChange = (e) => {
+    e.preventDefault();
+    console.log("form Data", formData)
+  }
+
+
   return (
     <div className="contact">
       <div className="pagewidth">
@@ -16,17 +32,17 @@ const ContactUs = () => {
             <form action="" method="get">
               <p>Leave us a message</p>
               <label htmlFor="">Name
-                <input type="text" placeholder='First_Name Last_Name' />
+                <input type="text" placeholder='First_Name Last_Name' value={fname} onChange={(e)=>setFname(e.target.value)}/>
               </label><br />
               <div className="email-form">
                 <label htmlFor="">
-                  <input type="email" name="" id=""  placeholder='Email Address'/>
+                  <input type="email" name="" id=""  placeholder='Email Address' value={email} onChange={(e)=>setEmail(e.target.value)}/>
                 </label><br />
               </div>
               <label htmlFor="">
-                <textarea name="" id="" rows="10" cols="64" placeholder='Your Message'></textarea>
+                <textarea name="" id="" rows="10" cols="64" placeholder='Your Message' value={message} onChange={(e)=>setMessage(e.target.value)}></textarea>
               </label><br />
-              <button>Send</button>
+              <button onClick={handleChange}>Send</button>
             </form>
             <div className="map"> 
               <p>Weekend UX <br />

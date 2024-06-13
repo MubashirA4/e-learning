@@ -45,34 +45,33 @@ header input::placeholder{
     text-align: left;
 }
 header .input .explore{
-    display: flex;
-    gap: 5px;
-    align-items: center;
-    color: rgba(32, 180, 134, 1);
-    background-color: rgb(242,255,251);
-    padding: 6px 20px;
-    border-radius: 3px;
-    font-family: Inter;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 20px;
-    width: fit-content;
-    position: absolute;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        color: rgba(32, 180, 134, 1);
+        background-color: rgb(242,255,251);
+        padding: 6px 20px;
+        border-radius: 3px;
+        font-family: Inter;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        width: fit-content;
+        position: absolute;
     top: 6%;
     right: 1px;
     cursor: pointer;
 }
-header nav{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+header .bar_menu{
+ display: flex;   
 }
-header nav ul{
+li{
     list-style-type: none;
-    display: flex;
 }
 header nav ul li{
-    display: inline;
+    display: inline-block;
+    padding: 8px 10px;
+
 }
 header nav ul li a{
     font-family: Inter;
@@ -80,14 +79,18 @@ header nav ul li a{
     font-weight: 500;
     line-height: 24px;
     color: rgba(16, 24, 40, 1);
-    padding: 8px 10px;
+    /* padding: 8px 10px; */
     display: inline-block;
 }
 header .signup{
-    margin-left: 15px;
-    display: flex;
-    gap: 10px;
+    /* margin-left: 15px; */
     align-items: center;  
+    
+}
+header .signup li{
+    display: inline-block;
+    padding: 8px;
+
 }
 header .signup .signin{
     color: rgba(16, 24, 40, 1);
@@ -114,6 +117,56 @@ header .signup a{
 a:active{
     text-decoration: underline;
 }
+header .bars{
+    display: none;
+}
+@media screen and (max-width:768px) {
+    header .bars{
+        display: block;
+        align-items: end;
+    }
+    header .bar_menu{
+        /* display: block; */
+        display: none;
+        position: absolute;
+        width: fit-content;
+        height: 75vh;
+        background: #FDF8EE;
+        top: 80px;
+        right: 0;
+        z-index: 9;
+    }
+    header .bar_menu nav{
+        justify-content: start;    
+    }
+    header .bar_menu li{
+        display: block !important;
+    }
+    header .signup{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    header .signup li{
+        padding: 10px 0px;
+    }
+    header .bar_menu.show_menu{
+        display: block !important;
+    }
+    header .bar_menu.hide_menu{
+        display: none ;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Footer */
 .footer{
@@ -184,5 +237,19 @@ a:active{
 .footer .page_width .icons .icons-1{
     margin-right: 20px;
 }
-
-
+@media screen and (max-width: 720px) {
+    .bars{
+        position: relative;
+    }
+    nav{
+        display: none;
+        position: absolute;
+        width: 100%;
+    }
+    .bar:hover nav{
+        display: block;
+    }
+    .footer{
+        width: fit-content;
+    }
+}
