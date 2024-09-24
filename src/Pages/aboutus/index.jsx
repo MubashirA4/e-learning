@@ -5,7 +5,7 @@ import Benefits from './sections/benefits'
 
 const AboutUs = () => {
   return (
-    <div>
+    <div className='page_width'>
       <Joinus/>
       <Features/>
       <Benefits/>

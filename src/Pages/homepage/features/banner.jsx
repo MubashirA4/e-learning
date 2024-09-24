@@ -13,6 +13,7 @@ import { GiTeacher } from "react-icons/gi";
 import { CgToolbox } from "react-icons/cg";
 import { TbBulb } from "react-icons/tb";
 import { BiColor } from 'react-icons/bi'
+import { Link } from 'react-router-dom'
 
 
 
@@ -26,10 +27,10 @@ const Banner = () => {
             <p>Learn UI-UX Design skills with weekend UX . The latest online learning system and material that help your knowledge growing.</p>
             <div className="buttons">
               <div className="getstarted">
-                <button>Get started</button>
+                <button><Link to="/sign_in">Get started</Link></button>
               </div>
               <div className="details">
-                <button>Get Free trial</button>
+                <button><Link to="/sign_in">Get Free trial</Link></button>
               </div>
             </div>
             <div className='bar'>
@@ -82,24 +83,24 @@ const Banner = () => {
             <p>Collaboration</p>
           </div>
           <div className="duo">
-            <a href="#">
+            <Link to="https://www.duolingo.com/" target='blank'>
               <img src={Img} alt="" />
-            </a>
+            </Link>
           </div>
           <div className="cov">
-            <a href="#">
+            <Link to="https://about.codecov.io/" target='blank'>
               <img src={Img1} alt="" />
-            </a>
+            </Link>
           </div>
           <div className="test">
-            <a href="#">
+            <Link to="https://www.usertesting.com/" target='blank'>
               <img src={Img2} alt="" />
-            </a>
+            </Link>
           </div>
           <div className="magic">
-            <a href="#">
+            <Link to="https://www.magicleap.com/" target='blank'>
               <img src={Img3} alt="" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>

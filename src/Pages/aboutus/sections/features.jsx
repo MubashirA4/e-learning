@@ -1,5 +1,8 @@
 import React from 'react'
 import Img from '../assets/Section Img.png'
+import { Link } from 'react-router-dom'
+
+
 const Features = () => {
   return (
     <div className='pagewidth'>
@@ -14,7 +17,7 @@ const Features = () => {
                 
                 <div className="btn">
                     <p>You will find every little thing on the internet in just a click of hand, but here we admire that without knowledge and practice the internet may even also fail you in your life.</p>
-                    <a href="">Learn More</a>
+                    <Link to="/about_us">Learn More</Link>
                 </div>
             </div>
         </div>

@@ -31,8 +31,8 @@ const ContactUs = () => {
           <div className="inner-form">
             <form action="" method="get">
               <p>Leave us a message</p>
-              <label htmlFor="">Name
-                <input type="text" placeholder='First_Name Last_Name' value={fname} onChange={(e)=>setFname(e.target.value)}/>
+              <label htmlFor="">
+                <input type="text" placeholder='First Name' value={fname} onChange={(e)=>setFname(e.target.value)}/>
               </label><br />
               <div className="email-form">
                 <label htmlFor="">
@@ -40,7 +40,7 @@ const ContactUs = () => {
                 </label><br />
               </div>
               <label htmlFor="">
-                <textarea name="" id="" rows="10" cols="64" placeholder='Your Message' value={message} onChange={(e)=>setMessage(e.target.value)}></textarea>
+                <textarea name="" id="" rows="10" cols="43" placeholder='Your Message' value={message} onChange={(e)=>setMessage(e.target.value)}></textarea>
               </label><br />
               <button onClick={handleChange}>Send</button>
             </form>

@@ -6,6 +6,7 @@ import { IoStarSharp } from "react-icons/io5";
 import Avatar from '../assets/Avatar.png'
 import Avatar1 from '../assets/Avatar (1).png'
 import Avatar2 from '../assets/Avatar (2).png'
+import { Link } from 'react-router-dom';
 
 
 const Explore = () => {
@@ -86,7 +87,7 @@ const Explore = () => {
                 </div>
             </div>
             <div className="btn">
-                <a href="">Explore All Programs</a>
+                <Link to="">Explore All Programs</Link>
             </div>
         </div>
     </div>
